@@ -1,0 +1,9 @@
+create table person (name varchar2(20),
+                     mobileNo varchar2(11) not null,
+                     balance number(20),
+                     primary key(mobileNo));
+
+create table transaction(mobileNo varchar2(11),
+                      type varchar(10),
+                      amount number(20),
+                      currentdate DATE);
